@@ -1,0 +1,209 @@
+html,body,section {
+	height:100%;
+}
+.bg {
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: -10px;
+	bottom: -10px;
+	left: -10px;
+	right: -10px;
+	background: url(https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=984a99ba9422720e6fc3eaa81aa26123/574e9258d109b3de0d3fd8b0c0bf6c81810a4c61.jpg)  no-repeat center;
+	background-size: cover;
+	background-position: center;
+	filter: blur(3px);
+	overflow: hidden;
+	z-index: -1;
+}
+.bg::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+
+}
+section {
+	height: 100vh;
+	
+}
+main {
+	width: 150vh;
+	margin: 0 auto;
+	height:75vh;
+	/*background: #fb4500;*/ 
+	/*background: pink;*/
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.msg {
+	float: left;
+	
+	margin-top: 15vh;	
+}
+.msg figure {
+	width:300px;
+	height: 35vh;
+	background: url(https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=984a99ba9422720e6fc3eaa81aa26123/574e9258d109b3de0d3fd8b0c0bf6c81810a4c61.jpg) no-repeat center;
+	background-size: cover;
+	box-shadow: 0.1vh 0.1vh 1vh #808080;
+}
+.msg .icon {
+	display: flex;
+	margin: 4vh 5px;
+	text-align: center;
+
+}
+.msg .iconfont {
+	font-size: 4vh;
+	flex: 1;
+	color: rgba(255,255,255,0.6);
+}
+.msg .iconfont:hover {
+	color: rgba(255,255,255,1);
+}
+.player {
+	margin-left: 380px;
+	padding-top: 15vh;
+	color: #fff;
+}
+.player .label{
+	background-color: 	#FA8072	;
+	color:#fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 3px;
+}
+.player .title {
+	margin-top: 4vh;
+}
+.player .icon {
+	display: flex;
+	margin: 8vh 5px;
+}
+.player .icon > div {
+	flex: 1;
+}
+.player .iconfont {
+	font-size: 4vh;
+}
+.player .iconfont:hover {
+	color: orange;
+}
+.player .bar {
+	margin-top: 3vh;
+	display: flex;
+	align-items: center; /*flex子项纵向方向上的对齐方式*/
+}
+.bar .probar {
+	flex: 1;
+	position: relative;
+	height: .8vh;
+	border-radius: 1vh;
+	background-color: #ccc;
+}
+.bar .newbar {
+	position: absolute;
+	width: 10%;
+	height: .8vh;
+	border-radius: 1vh;
+	background-color: #fff;
+	/*transition: width .8s;*/
+}
+.bar .time {
+	width: 3vh;
+	margin-left: 1vh;
+	font-size: 2vh;
+	color: 	#F5F5F5;
+}
+.player .singer {
+	margin-top: 3vh;
+	font-size: 2.2vh;
+	color: #fff;
+}
+.player .lyrics {
+	/*color: 	#F0FFFF;*/
+	color: 	#FFFAFA;
+	margin-top: 1vh;
+
+}
+footer {
+	height: 25vh;
+	background: rgba(255,255,255,0.2);
+	overflow: hidden;
+}
+footer .layout {
+	/*position: relative;*/
+}
+footer ul {
+	position: absolute;
+	/*transition: all 1.5s;*/
+}
+footer .box {
+	position: relative;
+	/*width: 150vh;*/
+	width: 73vw;
+	height: 25vh;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+footer .iconfont {
+	position: absolute;
+	font-size: 10vh;
+	font-weight: bold;
+	color: rgba(220,220,220,0.3);
+	line-height: 25vh;
+	opacity: 0;
+}
+footer .icon-left {
+	left: 10vh;
+}
+footer:hover .icon-left,
+footer:hover .icon-right {
+	opacity: 1;
+}
+footer .icon-left:hover,
+footer .icon-right:hover {
+	color: rgb(220,220,220,1);
+	transition: all 1s;
+}
+footer .icon-right {
+	right: 10vh;
+}
+footer li.active {
+	box-shadow: 0 0 3vh .3vh rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,0.3);
+}
+footer .box li{
+	float: left;
+	text-align: center;
+	margin: 3vh 2vh 0 2vh;
+}
+footer .box li:hover {
+	box-shadow: 0 0 3vh .3vh rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,0.3);
+}
+.box li > div {
+	width: 20vh;
+	height: 16vh;
+	background-position: center center;
+	background-size: cover;
+}
+.box h3 {
+	margin-top: 1vh;
+	color: #f5f5f5;
+}
+.boomText {
+	opacity: 0;
+	display: inline-block;
+}
